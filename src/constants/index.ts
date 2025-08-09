@@ -1,4 +1,5 @@
 export * from './device'
+export * from './hero'
 export * from './reqexp'
 export * from './routes'
 export * from './version'
