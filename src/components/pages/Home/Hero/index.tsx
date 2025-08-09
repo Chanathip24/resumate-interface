@@ -24,7 +24,7 @@ const Hero = () => {
       <h2 className="mt-15">Powerful Features for Your Career Growth</h2>
       <div className="flex gap-10">
         {card.map((prop: ICardProp, index) => (
-          <Card key={index} {...prop} />
+          <Card key={`card ${index}-${prop.title}`} {...prop} />
         ))}
       </div>
     </Section>
