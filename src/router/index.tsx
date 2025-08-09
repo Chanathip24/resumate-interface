@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider, ScrollRestoration } from 'react-router-dom'
 
 import { Layout } from '@/components/layout'
-import { ROUTES } from '@/constants'
 import HomePage from '@/pages/Home'
 
 const router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
@@ -15,7 +14,7 @@ const router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
     ),
     children: [
       {
-        path: ROUTES.home.path,
+        index: true,
         element: <HomePage />,
       },
     ],

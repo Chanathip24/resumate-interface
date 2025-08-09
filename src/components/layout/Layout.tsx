@@ -8,7 +8,7 @@ import { OutletWrapper } from './OutletWrapper'
 const Layout = () => {
   useDeviceWatcher()
   return (
-    <div className="bg-page relative min-h-screen">
+    <div className="text-theme-white relative min-h-screen">
       <NavBar />
       <OutletWrapper>
         <Outlet />
