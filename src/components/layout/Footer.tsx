@@ -5,12 +5,12 @@ import { Button } from '@/components/common';
 const Footer = () => {
     return (
         <footer>
-            <div className="bg-theme-night text-theme-gray-900 flex flex-col gap-[50px] px-[162px] py-[50px] relative">
-                <div className="flex items-center justify-between relative">
+            <div className="bg-theme-night text-theme-gray-900 flex flex-col gap-y-12 px-40 py-12">
+                <div className="flex items-center justify-between">
                     {/* Left: Logo */}
                     <h4 className="flex-shrink-0">ResuMATE</h4>
                     {/* Center: Nav */}
-                    <div className='flex gap-[30px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'>
+                    <div className='flex gap-x-7'>
                         {footerLinks.map((link) => (
                             <Link key={link.label} to={link.to || '#'}>
                                 {link.label}
@@ -18,11 +18,11 @@ const Footer = () => {
                         ))}
                     </div>
                     {/* Right: Social */}
-                    <div className='flex flex-shrink-0 gap-[20px] items-center border rounded-[12px] border-[#262626] p-[14px] pl-[24px]'>
+                    <div className='flex flex-shrink-0 gap-5 items-center border rounded-lg border-theme-night-300 p-3 pl-6'>
                         <p>Stay Connected</p>
-                        <div className='flex gap-[14px] text-theme-white'>
+                        <div className='flex gap-3 text-theme-white'>
                             {footerSocialLinks.map((link) => (
-                                <Button variant='outline' className='border-theme-white text-theme-white'>
+                                <Button asChild variant='outline' className='border-theme-white text-theme-white'>
                                     <Link key={link.label} to={link.to || '#'}>
                                         {link.icon}
                                     </Link>
@@ -32,12 +32,12 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <hr className="border-[#262626]" />
+                <hr className="border-theme-night-300" />
 
                 <div className='flex justify-between'>
-                    <div className='flex gap-[30px]'>
+                    <div className='flex gap-7'>
                         {footerContactInfo.map((info) => (
-                            <div key={info.label}>
+                            <div key={info.label} className='flex items-center gap-x-2'>
                                 {info.icon}
                                 <p>{info.label}</p>
                             </div>
