@@ -22,9 +22,11 @@ const Footer = () => {
                         <p>Stay Connected</p>
                         <div className='flex gap-[14px] text-theme-white'>
                             {footerSocialLinks.map((link) => (
-                                <Link key={link.label} to={link.to || '#'} className='p-[20px] border rounded-[8px]'>
-                                    {link.icon}
-                                </Link>
+                                <Button variant='outline' className='border-theme-white text-theme-white'>
+                                    <Link key={link.label} to={link.to || '#'}>
+                                        {link.icon}
+                                    </Link>
+                                </Button>
                             ))}
                         </div>
                     </div>
@@ -35,10 +37,10 @@ const Footer = () => {
                 <div className='flex justify-between'>
                     <div className='flex gap-[30px]'>
                         {footerContactInfo.map((info) => (
-                            <Button key={info.label}>
+                            <div key={info.label}>
                                 {info.icon}
                                 <p>{info.label}</p>
-                            </Button>
+                            </div>
                         ))}
                     </div>
                     <p className='text-theme-gray-600'>© 2023 Araigodai. All rights reserved.</p>
