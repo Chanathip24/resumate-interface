@@ -1,5 +1,6 @@
-import type { Maybe } from '@/types'
 import type { ReactNode } from 'react'
+
+import type { Maybe } from '@/types'
 
 type FooterBase = {
   label: string

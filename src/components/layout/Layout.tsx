@@ -2,9 +2,9 @@ import { Outlet } from 'react-router-dom'
 
 import { useDeviceWatcher } from '@/hooks'
 
+import Footer from './Footer'
 import NavBar from './Navbar'
 import { OutletWrapper } from './OutletWrapper'
-import Footer from './Footer'
 
 const Layout = () => {
   useDeviceWatcher()

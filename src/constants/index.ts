@@ -1,6 +1,6 @@
 export * from './device'
+export * from './footer'
 export * from './hero'
 export * from './reqexp'
 export * from './routes'
 export * from './version'
-export * from './footer'
