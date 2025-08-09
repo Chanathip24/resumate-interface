@@ -7,7 +7,7 @@ type FooterBase = {
   icon: ReactNode
 }
 
-export type FooterLink = Omit<FooterBase, 'icon'>
+export type FooterNavLink = Omit<FooterBase, 'icon'>
 
 export type FooterSocialLink = FooterBase
 

@@ -1,8 +1,8 @@
 import { ROUTES } from './routes'
-import type { FooterLink, FooterSocialLink, FooterContactInfo } from '@/types'
+import type { FooterNavLink, FooterSocialLink, FooterContactInfo } from '@/types'
 import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 
-export const footerLinks: FooterLink[] = [
+export const footerLinks: FooterNavLink[] = [
   { label: 'Home', to: ROUTES.home.path },
   { label: 'Services', to: null },
   { label: 'Work', to: null },

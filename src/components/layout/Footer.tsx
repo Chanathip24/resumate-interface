@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { footerLinks, footerSocialLinks, footerContactInfo } from '@/constants';
 import { Button } from '@/components/common';
+import type { FooterContactInfo, FooterNavLink, FooterSocialLink } from '@/types';
 
 const Footer = () => {
     return (
@@ -10,7 +11,7 @@ const Footer = () => {
                 <h4 className="flex-shrink-0">ResuMATE</h4>
                 {/* Center: Nav */}
                 <div className='flex gap-x-7'>
-                    {footerLinks.map((link) => (
+                    {footerLinks.map((link: FooterNavLink) => (
                         <Link key={link.label} to={link.to || '#'}>
                             {link.label}
                         </Link>
@@ -20,7 +21,7 @@ const Footer = () => {
                 <div className='flex flex-shrink-0 gap-5 items-center border rounded-lg border-theme-night-300 p-3 pl-6'>
                     <p>Stay Connected</p>
                     <div className='flex gap-3 text-theme-white'>
-                        {footerSocialLinks.map((link) => (
+                        {footerSocialLinks.map((link: FooterSocialLink) => (
                             <Button asChild variant='outline' className='border-theme-white text-theme-white'>
                                 <Link key={link.label} to={link.to || '#'}>
                                     {link.icon}
@@ -35,7 +36,7 @@ const Footer = () => {
 
             <div className='flex justify-between'>
                 <div className='flex gap-7'>
-                    {footerContactInfo.map((info) => (
+                    {footerContactInfo.map((info: FooterContactInfo) => (
                         <div key={info.label} className='flex items-center gap-x-2'>
                             {info.icon}
                             <p>{info.label}</p>
