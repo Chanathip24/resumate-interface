@@ -23,10 +23,8 @@ const Footer = () => {
           <p>Stay Connected</p>
           <div className="text-theme-white flex gap-3">
             {footerSocialLinks.map((link: FooterSocialLink) => (
-              <Button asChild variant="outline" className="border-theme-white text-theme-white">
-                <Link key={link.label} to={link.to || '#'}>
-                  {link.icon}
-                </Link>
+              <Button key={link.label} asChild variant="outline" className="border-theme-white text-theme-white">
+                <Link to={link.to || '#'}>{link.icon}</Link>
               </Button>
             ))}
           </div>
