@@ -1,6 +1,14 @@
-import type { Maybe } from 'src/types/utils'
+import type { Maybe } from '@/types'
+import type { ReactNode } from 'react'
 
-export type FooterLink = {
+type FooterBase = {
   label: string
-  to: Maybe
+  to: Maybe<string>
+  icon: ReactNode
 }
+
+export type FooterLink = Omit<FooterBase, 'icon'>
+
+export type FooterSocialLink = FooterBase
+
+export type FooterContactInfo = Omit<FooterBase, 'to'>

@@ -4,6 +4,7 @@ import { useDeviceWatcher } from '@/hooks'
 
 import NavBar from './Navbar'
 import { OutletWrapper } from './OutletWrapper'
+import Footer from './Footer'
 
 const Layout = () => {
   useDeviceWatcher()
@@ -13,6 +14,7 @@ const Layout = () => {
       <OutletWrapper>
         <Outlet />
       </OutletWrapper>
+      <Footer />
     </div>
   )
 }
