@@ -3,7 +3,7 @@ import { Section } from '@/components/pages/Home/Section'
 
 const Career = () => {
   return (
-    <Section contentClassName="flex justify-between">
+    <Section contentClassName="flex justify-between bg-theme-night-100">
       <div className="flex w-4/5 flex-col justify-start gap-y-4">
         <h2>Start Your Real Career Today</h2>
         <p className="text-theme-gray-600">
