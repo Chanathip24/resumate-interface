@@ -1,13 +1,14 @@
 import { Content, Header, Item, Root, Trigger } from '@radix-ui/react-accordion'
 import { ChevronDownIcon } from 'lucide-react'
+import type { ComponentProps } from 'react'
 
 import { cn } from '@/utilities'
 
-function Accordion({ ...props }: React.ComponentProps<typeof Root>) {
+function Accordion({ ...props }: ComponentProps<typeof Root>) {
   return <Root data-slot="accordion" {...props} />
 }
 
-function AccordionItem({ className, ...props }: React.ComponentProps<typeof Item>) {
+function AccordionItem({ className, ...props }: ComponentProps<typeof Item>) {
   return (
     <Item
       data-slot="accordion-item"
@@ -17,7 +18,7 @@ function AccordionItem({ className, ...props }: React.ComponentProps<typeof Item
   )
 }
 
-function AccordionTrigger({ className, children, ...props }: React.ComponentProps<typeof Trigger>) {
+function AccordionTrigger({ className, children, ...props }: ComponentProps<typeof Trigger>) {
   return (
     <Header className="flex">
       <Trigger
@@ -35,7 +36,7 @@ function AccordionTrigger({ className, children, ...props }: React.ComponentProp
   )
 }
 
-function AccordionContent({ className, children, ...props }: React.ComponentProps<typeof Content>) {
+function AccordionContent({ className, children, ...props }: ComponentProps<typeof Content>) {
   return (
     <Content data-slot="accordion-content" className="accordion-content text-body-2 overflow-hidden" {...props}>
       <div className={cn('pb-4 pt-0', className)}>{children}</div>
