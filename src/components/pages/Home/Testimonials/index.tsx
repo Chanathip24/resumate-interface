@@ -24,7 +24,7 @@ const Testimonials = () => {
       </div>
       <div className="flex flex-row gap-x-4 overflow-x-scroll">
         {testimonials.map((card: ITestimonials, index: number) => (
-          <Card key={index} {...card} />
+          <Card key={'card' + index} {...card} />
         ))}
       </div>
       <hr className="border-theme-white/10 w-full border" />
