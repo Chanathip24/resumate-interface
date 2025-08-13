@@ -1,3 +1,4 @@
+export * from './card'
 export * from './device'
 export * from './footer'
 export * from './hero'
