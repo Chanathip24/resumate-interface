@@ -4,6 +4,8 @@ const HomePage = () => {
   return (
     <div className="flex size-full flex-col items-center justify-center">
       <Hero />
+      <Testimonials />
+      <Career />
     </div>
   )
 }

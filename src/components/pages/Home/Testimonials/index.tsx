@@ -3,7 +3,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/common'
 import { Section } from '@/components/pages/Home/Section'
 import { testimonials } from '@/constants'
-import type { Testimonials } from '@/types'
+import type { ITestimonials } from '@/types'
 
 import Card from './card'
 
@@ -23,7 +23,7 @@ const Testimonials = () => {
         </div>
       </div>
       <div className="flex flex-row gap-x-4 overflow-x-scroll">
-        {testimonials.map((card: Testimonials, index: number) => (
+        {testimonials.map((card: ITestimonials, index: number) => (
           <Card key={index} {...card} />
         ))}
       </div>

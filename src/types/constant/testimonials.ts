@@ -1,6 +1,6 @@
 import type { Maybe } from '@/types'
 
-export type Testimonials = {
+export type ITestimonials = {
   rates: number
   topic: string
   comment: string
