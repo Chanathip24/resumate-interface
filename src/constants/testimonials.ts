@@ -1,6 +1,6 @@
-import type { Testimonials } from '@/types'
+import type { ITestimonials } from '@/types'
 
-export const testimonials: Array<Testimonials> = [
+export const testimonials: Array<ITestimonials> = [
   {
     rates: 5,
     topic: 'Unbelievable',

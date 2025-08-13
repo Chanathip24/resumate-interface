@@ -1,8 +1,8 @@
 import { Star, UserRound } from 'lucide-react'
 
-import type { Testimonials } from '@/types'
+import type { ITestimonials } from '@/types'
 
-const Card = ({ rates, topic, comment, name, location }: Testimonials) => {
+const Card = ({ rates, topic, comment, name, location }: ITestimonials) => {
   return (
     <div className="h-70 w-100 border-theme-white/20 bg-theme-night-300 rounded-2xl border p-6">
       <div className="flex flex-row gap-x-4 p-4">
