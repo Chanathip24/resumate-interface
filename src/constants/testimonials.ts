@@ -1,6 +1,6 @@
 import type { ITestimonials } from '@/types'
 
-export const testimonials: Array<ITestimonials> = [
+export const TESTIMONIALS_MOCK: Array<ITestimonials> = [
   {
     rates: 5,
     topic: 'Unbelievable',
@@ -27,11 +27,11 @@ export const testimonials: Array<ITestimonials> = [
   },
   {
     rates: 1,
-    topic: 'Good',
+    topic: 'Bad',
     comment: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
     profile_pic: '',
-    name: 'John Doe',
-    location: 'USA, California',
+    name: 'Taetae',
+    location: 'Thailand, Ratchaburi',
   },
   {
     rates: 2,

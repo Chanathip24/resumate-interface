@@ -2,16 +2,16 @@ import { Star, UserRound } from 'lucide-react'
 
 import type { ITestimonials } from '@/types'
 
-const Card = ({ rates, topic, comment, name, location }: ITestimonials) => {
+const TCard = ({ rates, topic, comment, name, location }: ITestimonials) => {
   return (
     <div className="h-70 w-100 border-theme-white/20 bg-theme-night-300 rounded-2xl border p-6">
-      <div className="flex flex-row gap-x-4 p-4">
-        {Array.from({ length: rates }).map((_, index) => (
+      <div className="flex flex-row gap-x-2">
+        {[...Array(rates)].map((_, index) => (
           <div
             key={'card' + index}
-            className="border-theme-white/20 flex items-center justify-center rounded-full border p-2"
+            className="border-theme-white/10 flex items-center justify-center rounded-full border p-2"
           >
-            <Star className="fill-theme-white size-4" />
+            <Star className="text-theme-secondary-400 fill-theme-secondary-400 size-5" />
           </div>
         ))}
       </div>
@@ -33,4 +33,4 @@ const Card = ({ rates, topic, comment, name, location }: ITestimonials) => {
   )
 }
 
-export default Card
+export default TCard
