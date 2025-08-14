@@ -6,8 +6,8 @@ const HomePage = () => {
       <Hero />
       <Service />
       <Question />
-      <Career />
       <Service />
+      <Career />
     </div>
   )
 }
