@@ -1,6 +1,10 @@
 import { Button } from '@/components/common'
 import Glass from '@/components/pages/Home/Hero/Glass'
 import { Section } from '@/components/pages/Home/Section'
+import { card } from '@/constants'
+import type { ICardProp } from '@/types'
+
+import Card from './Card'
 
 const Hero = () => {
   return (
@@ -16,6 +20,12 @@ const Hero = () => {
       <div className="flex items-center gap-x-4">
         <Button>Get Started</Button>
         <Button variant="outline">Learn More</Button>
+      </div>
+      <h2 className="mt-15">Powerful Features for Your Career Growth</h2>
+      <div className="flex gap-10">
+        {card.map((prop: ICardProp, index) => (
+          <Card key={`card ${index}-${prop.title}`} {...prop} />
+        ))}
       </div>
     </Section>
   )
