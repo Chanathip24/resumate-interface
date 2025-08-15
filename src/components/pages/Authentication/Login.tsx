@@ -13,16 +13,23 @@ const Login = () => {
       <div className="w-full">
         <form className="flex flex-col gap-y-4">
           <div className="flex flex-col gap-y-1">
-            <label>Email</label>
+            <label htmlFor="email">Email</label>
             <input
+              id="email"
+              name="email"
               type="email"
+              required
+              autoComplete="email"
               className="bg-theme-night-50 border-theme-night-400 w-full rounded-lg border px-4 py-2"
             />
           </div>
           <div className="flex flex-col gap-y-1">
-            <label>Password</label>
+            <label htmlFor="password">Password</label>
             <input
+              id="password"
+              name="password"
               type="password"
+              autoComplete="current-password"
               className="bg-theme-night-50 border-theme-night-400 w-full rounded-lg border px-4 py-2"
             />
             <p className="flex justify-end">Forgot Password?</p>
@@ -30,7 +37,7 @@ const Login = () => {
         </form>
       </div>
       <div className="flex flex-col items-center gap-y-4">
-        <Button variant="secondary" className="text-theme-night-50 w-full font-semibold">
+        <Button type="submit" variant="secondary" className="text-theme-night-50 w-full font-semibold">
           Get Started
         </Button>
         or continue with
