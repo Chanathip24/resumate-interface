@@ -7,4 +7,5 @@ export type ITestimonials = {
   profile_pic: Maybe<string>
   name: string
   location: string
+  className?: string
 }

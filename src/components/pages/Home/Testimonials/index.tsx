@@ -8,20 +8,22 @@ import type { ITestimonials } from '@/types'
 
 const Testimonials = () => {
   return (
-    <Section contentClassName="flex flex-col gap-y-14">
-      <div className="flex items-center justify-between">
+    <Section className="flex" contentClassName="flex gap-y-14 flex-col item-center justify-center">
+      <div className="flex items-center justify-between gap-x-5">
         <div className="flex flex-col gap-y-4">
           <h2>What Our Client Say</h2>
-          <p>
+          <p className="w-4/5">
             Read the success stories and heartfelt testimonials from our values cliens. Discover why thry chose Estatein
             for their real estate needs.
           </p>
         </div>
-        <div className="p-4">
+
+        <div>
           <Button variant="secondary">View All Testimonials</Button>
         </div>
       </div>
-      <div className="flex flex-row gap-x-4 overflow-x-scroll">
+
+      <div className="flex w-full gap-x-4 overflow-x-auto">
         {TESTIMONIALS_MOCK.map((card: ITestimonials, index: number) => (
           <TCard key={'card' + index} {...card} />
         ))}
@@ -30,10 +32,10 @@ const Testimonials = () => {
       <div className="flex w-full items-center justify-between">
         <h6> 01 of 10 </h6>
         <div className="flex gap-x-2">
-          <Button variant="secondary" className="flex items-center rounded-full border p-2">
+          <Button variant="secondary" className="flex items-center rounded-full border">
             <ArrowLeft />
           </Button>
-          <Button variant="secondary" className="flex items-center rounded-full border p-2">
+          <Button variant="secondary" className="flex items-center rounded-full border">
             <ArrowRight />
           </Button>
         </div>
